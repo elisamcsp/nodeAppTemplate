@@ -22,7 +22,7 @@ jobs:
         run: npm run test-jenkins
       
       - uses: actions/upload-artifact@v2
-         if: success() || failure() 
-         with:
-           name: test-results 
-           path: ./coverage/test.results.xml
+        if: success() || failure() 
+        with:
+          name: test-results 
+          path: ./coverage/test.results.xml
